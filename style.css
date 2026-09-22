@@ -397,12 +397,39 @@ section {
 /* ==================================================
    SKILLS SECTION & SCROLL ANIMATION
 ================================================== */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-}
+/* =========================================
+   SKILLS - MOBILE
+========================================= */
 
+@media (max-width: 550px) {
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .skill-card {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .skill-card h3 {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    .skill-card p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}
 .skill-card {
     padding: 27px;
     background: #111116;
